@@ -1,0 +1,72 @@
+
+.box {
+    list-style: none;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
+    padding:20px;
+    border:1px solid #d4d4d4;
+    margin: 5%;
+    padding: 2%;
+} 
+li{
+    font-size:15px;
+    padding:4px;
+    cursor: pointer;
+    list-style: none;
+    background: aliceblue;
+    padding: 2px;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    background: aliceblue;
+    padding: 9px;
+}
+ul li:hover{
+    background: #d4d4d4;
+}
+.b1 {
+    margin-top: 92px;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding: 12px;
+    list-style: none;
+}
+button, select {
+    margin: 10px;
+    text-transform: none;
+}
+.btn:not(:disabled):not(.disabled) {
+    text-align: right;
+    margin-left: 90%;
+    /* padding: 0%; */
+    cursor: pointer;
+}
+input, optgroup, select, textarea {
+    border-left: none;
+    border-bottom-color: black;
+    border-top: none;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 82%;
+    border-right: none;
+}
+input, optgroup, select, textarea :hover{
+    border-left: none;
+    border-bottom-color: black;
+    border-top: none;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 82%;
+    border-right: none;
+}
+.c{
+    margin:84px;
+}
+.err{
+    color: red;
+}

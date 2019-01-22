@@ -1,0 +1,51 @@
+
+ <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>SIGN UP</h2>
+            <form [formGroup]="form1"(ngSubmit)="onSubmit()">
+
+                <div class="form-group">
+                    <label for="name">name</label>
+                    <input type="text" formControlName="name" class="form-control"  [ngClass]="{'is-invalid':submitted && f.name.errors}"/>
+                    <div *ngIf="submitted && f.name.errors" class="lbl-err">
+                            <div *ngIf="f.name.errors.required"> name is required </div>
+                            <!-- <div *ngIf="f.email.errors.pattern">Please Enter valid Email!!</div> -->
+                    </div>
+                </div>
+
+                 <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" formControlName="email" class="form-control"  [ngClass]="{'is-invalid':submitted && f.email.errors}"/>
+                    <div *ngIf="submitted && f.email.errors" class="lbl-err">
+                            <div *ngIf="f.email.errors.required"> email is required </div>
+                            <!-- <div *ngIf="f.email.errors.pattern">Please Enter valid Email!!</div> -->
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNo">phoneNo</label>
+                    <input type="text" formControlName="phoneNo" class="form-control"  [ngClass]="{'is-invalid':submitted && f.phoneNo.errors}"/>
+                    <div *ngIf="submitted && f.phoneNo.errors" class="lbl-err">
+                            <div *ngIf="f.phoneNo.errors.required"> email is required </div>
+                            <!-- <div *ngIf="f.email.errors.pattern">Please Enter valid Email!!</div> -->
+                    </div>
+                </div>
+             
+                 <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" formControlName="password"  class="form-control"[ngClass]="{'is-invalid':submitted && f.password.errors}"/>
+                    <div *ngIf="submitted && f.password.errors" class="lbl-err">
+                          <div *ngIf="f.password.errors.required">password is required</div>
+                          <!-- <div *ngIf="f.password.errors.minlength">password is required</div> -->
+                   </div>
+                 </div>
+                      <button type="submit" class="btn btn-default">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <button type="clear" class="btn btn-default">clear</button>
+                </form>
+  
+                    <p>Don have an account? &nbsp;<a routerLink="">login here</a> </p>
+  
+         </div>
+      </div>
+  </div>

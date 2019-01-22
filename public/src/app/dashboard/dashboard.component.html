@@ -1,0 +1,32 @@
+<app-logout></app-logout>
+<h3 style="text-align:center">CHATS</h3>
+<div class="box">
+  <table class="table table">
+    <thead>
+      <th scope="col">UserName</th>
+     
+    </thead>
+    <tbody>
+      <tr scope="row" *ngFor="let user of usersList"><br>
+        <!-- <img  src="/home/codezeros/Desktop/chatdemo/public/src/app/dummy.jpg" 
+        style="cursor: pointer" /> -->
+        <img src="./assets/dummy.jpg" style="color: grey"  width="21px"/> <span class="badge badge-pill badge-light"  (click)="room(user._id)"> {{user.name}}</span>
+    </tr>
+     
+    </tbody>
+
+  </table>
+</div>
+<div class="box1"  >
+  <table class="table table">
+      <thead>
+          <th scope="col">Group Name</th>
+       </thead>
+       <tbody>
+          <tr *ngFor="let groupname of groupNameList"><br>
+            <img src="./assets/dummy.jpg" style="color: grey"  width="21px"/> <span class="badge badge-pill badge-light" (click)="groupRoom(groupname._id)">{{groupname.groupName}}</span>
+            </tr>
+       </tbody>
+  </table>
+  
+</div>

@@ -1,0 +1,31 @@
+
+ <div class="container">
+  <div class="row">
+      <div class="col-md-6 offset-md-3">
+          <h2>SIGN IN</h2>
+          <form [formGroup]="loginform"(ngSubmit)="onSubmit()">
+               <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" formControlName="email" class="form-control"  [ngClass]="{'is-invalid':submitted && f.email.errors}"/>
+                  <div *ngIf="submitted && f.email.errors" class="lbl-err">
+                          <div *ngIf="f.email.errors.required"> email is required </div>
+                          <!-- <div *ngIf="f.email.errors.pattern">Please Enter valid Email!!</div> -->
+                  </div>
+              </div>
+           
+          <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" formControlName="password"  class="form-control"[ngClass]="{'is-invalid':submitted && f.password.errors}"/>
+                  <div *ngIf="submitted && f.password.errors" class="lbl-err">
+                        <div *ngIf="f.password.errors.required">password is required</div>
+                        <!-- <div *ngIf="f.password.errors.minlength">password is required</div> -->
+                 </div>
+               </div>
+                    <button type="submit" class="btn btn-default">Sign in!</button>
+              </form>
+
+                  <p>Don't have an account? &nbsp;<a routerLink="/signup">register</a> </p>
+
+       </div>
+    </div>
+</div>

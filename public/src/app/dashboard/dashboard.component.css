@@ -1,0 +1,57 @@
+
+.box{
+  width:30%;
+  height:1000%;
+  position:relative;
+ margin-left: 20%;
+ margin-right: 20%;
+  align-self: center;
+  padding-top: 20px;
+  margin-top: 120px;
+  padding: 4rem;
+  border-radius: 50px;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.55);
+  margin-top: 133px;
+}
+.box1{
+  padding-top: 0%;
+    width: 30%;
+    height: 1000%;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-self: center;
+    padding-top: 20px;
+    padding: 66px;
+    border-radius: 50px;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.55);
+     margin-top: -16%;
+    margin-left: 57%;
+}
+.badge-light {
+  color: #212529;
+  background-color: gainsboro;
+  
+}
+.badge {
+  /* background-image: url("/home/codezeros/Desktop/chatdemo/public/src/assets/dummy.jpg"); */
+  height: 34px;
+  width: 85%;
+  display: inline-block;
+  padding: 0.25em 2.4em;
+  font-size: 108%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+}
+img {
+  width: 28px;
+  vertical-align: middle;
+  border-style: none;
+  padding-top: 6px;
+}
